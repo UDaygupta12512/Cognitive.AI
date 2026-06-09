@@ -1,0 +1,306 @@
+
+
+.privileges-section-3d {
+  background-color: #F8EFE2;
+  
+  background-image: repeating-radial-gradient(
+    ellipse at top left,
+    transparent 0,
+    transparent 12px,
+    rgba(220, 205, 185, 0.2) 13px,
+    rgba(220, 205, 185, 0.2) 14px
+  );
+  padding: 80px 0 120px;
+  min-height: 500px;
+  overflow: hidden;
+  font-family: var(--font-family, 'Mulish', sans-serif);
+}
+
+.privileges-title-3d {
+  text-align: center;
+  color: #8C2A2A;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 70px;
+  letter-spacing: -0.5px;
+}
+
+.carousel-3d-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  height: 320px;
+  perspective: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-3d {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+
+.card-3d {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 440px;
+  height: 260px;
+  margin-top: -130px;
+  margin-left: -220px;
+  background: white;
+  border-radius: 16px;
+  border: 8px solid #FDF9F4;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+  transition: transform 0.7s cubic-bezier(0.25, 1, 0.5, 1), 
+              opacity 0.7s cubic-bezier(0.25, 1, 0.5, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  user-select: none;
+  cursor: pointer;
+  backface-visibility: hidden;
+}
+
+
+.card-3d::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.5);
+  transition: opacity 0.7s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.card-3d.active::after {
+  opacity: 0;
+}
+
+
+.card-3d-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 24px;
+  background: transparent;
+  border-radius: 8px;
+}
+
+
+.card-3d-bg {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 1;
+  opacity: 0.15;
+}
+.ixigo-bg {
+  
+  background-image: radial-gradient(circle, #000 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+.reliance-bg {
+  
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(0,0,0,0.2) 10px, rgba(0,0,0,0.2) 11px);
+}
+.bms-bg {
+  background-image: radial-gradient(circle, #000 1px, transparent 1px);
+  background-size: 15px 15px;
+}
+
+
+.card-3d-text-small {
+  color: #666;
+  font-size: 15px;
+  margin: 5px 0;
+  position: relative;
+  z-index: 3;
+}
+
+.card-3d-text-orange {
+  color: #E35E22;
+  font-size: 26px;
+  font-weight: 800;
+  margin: 6px 0;
+  position: relative;
+  z-index: 3;
+  letter-spacing: -0.5px;
+}
+
+.card-3d-text-bold {
+  color: #444;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 5px 0 25px;
+  position: relative;
+  z-index: 3;
+}
+
+.bms-title {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+
+.card-3d-logo {
+  margin-top: 15px;
+  position: relative;
+  z-index: 3;
+}
+
+.ixigo-logo {
+  background: #EE6A38;
+  color: white;
+  padding: 6px 20px;
+  font-weight: 800;
+  font-size: 24px;
+  border-radius: 6px;
+  letter-spacing: -1px;
+}
+
+.reliance-logo {
+  background: #E31837;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reliance-top {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.reliance-circle {
+  width: 14px; height: 14px;
+  background: #0033A0;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.reliance-digital-text {
+  font-weight: 400;
+  margin-left: 3px;
+}
+
+.reliance-bottom {
+  font-size: 7.5px;
+  letter-spacing: 1.5px;
+  margin-top: 6px;
+  font-weight: 700;
+}
+
+.bms-logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+}
+.bms-my {
+  color: #E31837;
+}
+
+
+.card-3d.active {
+  transform: translateX(0) scale(1.05) translateZ(0);
+  z-index: 3;
+  opacity: 1;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.18);
+}
+
+.card-3d.prev {
+  
+  transform: translateX(-55%) scale(0.9) rotateY(18deg) translateZ(-80px);
+  z-index: 2;
+  opacity: 0.95;
+}
+
+.card-3d.next {
+  
+  transform: translateX(55%) scale(0.9) rotateY(-18deg) translateZ(-80px);
+  z-index: 2;
+  opacity: 0.95;
+}
+
+.card-3d.hidden-left {
+  transform: translateX(-90%) scale(0.7) rotateY(20deg) translateZ(-150px);
+  z-index: 1;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.card-3d.hidden-right {
+  transform: translateX(90%) scale(0.7) rotateY(-20deg) translateZ(-150px);
+  z-index: 1;
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+.carousel-3d-arrow {
+  position: absolute;
+  
+  left: calc(50% + 240px);
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  background: transparent;
+  color: #9B2A2A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  cursor: pointer;
+  transition: transform 0.2s;
+  border: none;
+}
+
+.carousel-3d-arrow:hover {
+  transform: translateY(-50%) scale(1.15);
+}
+
+.carousel-3d-arrow svg {
+  width: 38px;
+  height: 38px;
+}
+
+
+@media (max-width: 900px) {
+  .carousel-3d-wrapper { height: 260px; }
+  .card-3d {
+    width: 340px; height: 200px;
+    margin-top: -100px; margin-left: -170px;
+  }
+  .card-3d.active { transform: translateX(0) scale(1) translateZ(0); }
+  .card-3d.prev { transform: translateX(-45%) scale(0.85) rotateY(15deg) translateZ(-50px); }
+  .card-3d.next { transform: translateX(45%) scale(0.85) rotateY(-15deg) translateZ(-50px); }
+  .carousel-3d-arrow { left: calc(50% + 180px); }
+}
+
+@media (max-width: 600px) {
+  .carousel-3d-wrapper { height: 220px; }
+  .card-3d {
+    width: 280px; height: 180px;
+    margin-top: -90px; margin-left: -140px;
+  }
+  .card-3d.prev { transform: translateX(-30%) scale(0.8) rotateY(10deg) translateZ(-50px); opacity: 0; }
+  .card-3d.next { transform: translateX(30%) scale(0.8) rotateY(-10deg) translateZ(-50px); opacity: 0; }
+  .carousel-3d-arrow { left: calc(50% + 150px); }
+}
