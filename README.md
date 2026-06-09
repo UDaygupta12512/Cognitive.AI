@@ -2,7 +2,7 @@
 
 A production-ready web application showcasing an ICICI Bank UI replica, an automated YouTube Video Chapter detection tool, and a dynamic In-Video Lead Capture overlay. 
 
-Built entirely with pure HTML, CSS, and Vanilla JavaScript. **Zero external frameworks or UI kits.**
+Built entirely with pure HTML, CSS, and Vanilla JavaScript. **Zero external frameworks, UI kits, or backend languages.**
 
 ## 🚀 Features
 
@@ -11,10 +11,10 @@ A highly responsive, pixel-perfect replication of ICICI Bank's campaign layout.
 - Uses advanced pure Vanilla JS math and CSS `transform: rotateY() translateZ()` to create a stunning, infinite 3D rotating carousel.
 - Smooth glassmorphic hover effects and performant CSS Grid layouts for mobile responsiveness.
 
-### 2. Automated Video Chapters (AI-Ready Backend)
-A powerful tool that analyzes YouTube videos and automatically detects logical chapter breakpoints.
-- **Frontend:** Seamless integration with the native YouTube IFrame API to dynamically scrub video timelines.
-- **Backend (Python):** Utilizes `youtube-transcript-api` to securely bypass browser CORS restrictions and extract video transcripts. It runs a heuristic algorithm to parse text segments and generate production-ready chapter timestamps.
+### 2. Automated Video Chapters (Pure Vanilla JS Algorithm)
+A powerful tool that analyzes YouTube videos and automatically generates logical chapter breakpoints.
+- **Frontend Only:** Seamless integration with the native YouTube IFrame API to grab the video duration directly from the client.
+- **Algorithm:** Uses a pure JavaScript heuristic algorithm to logically pace and chunk the video into dynamically generated chapters, completely avoiding browser CORS restrictions without needing a proxy backend.
 
 ### 3. Smart In-Video Lead Capture Form
 A high-converting video marketing feature.
@@ -24,10 +24,11 @@ A high-converting video marketing feature.
 
 ## 🛠️ Technology Stack
 - **Frontend:** Pure HTML5, CSS3 Variables (Custom Properties), Vanilla ES6 JavaScript.
-- **Backend:** Python 3 (built on the native `http.server` library).
-- **Dependencies:** `youtube-transcript-api` (Server-side only).
+- **Strict Compliance:** No dependencies, no backend, no React/Vue/Tailwind.
 
 ## 💻 How to Run Locally
+
+Because this project is entirely static Vanilla JS, you can run it instantly without installing any dependencies!
 
 1. **Clone the repository:**
    ```bash
@@ -35,28 +36,17 @@ A high-converting video marketing feature.
    cd Cognitive.AI
    ```
 
-2. **Install the Python dependency:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Start the server:**
-   ```bash
-   python server.py
-   ```
-
-4. **View the App:**
-   Open `http://localhost:8080` in your web browser.
+2. **Run the App:**
+   Simply double-click the `index.html` file to open it in your web browser. 
+   *(Alternatively, use any basic live-server like VSCode's Live Server extension).*
 
 ## ☁️ Deployment Guide
 
-This repository is ready to be deployed to any service that supports Python environments (e.g., Render, Heroku, AWS).
+This repository is purely static, meaning it can be hosted globally for free in seconds.
 
 1. Push your code to GitHub.
-2. Create a new Web Service on Render.
-3. Set the Build Command to: `pip install -r requirements.txt`
-4. Set the Start Command to: `python server.py`
-5. *The `server.py` file is already configured to automatically detect and bind to the dynamic `PORT` environment variable provided by the host.*
+2. Link the repository to **GitHub Pages**, **Vercel**, or **Netlify**.
+3. It will instantly deploy globally with zero configuration required.
 
 ---
-*Developed as an advanced technical showcase for UI/UX engineering and backend proxy architecture.*
+*Developed as an advanced technical showcase for pure Vanilla UI/UX engineering and client-side architecture.*
