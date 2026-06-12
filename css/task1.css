@@ -343,15 +343,16 @@
   .ixigo-logo { font-size: 16px; padding: 4px 10px; }
   .reliance-top { font-size: 16px; }
   .bms-title { font-size: 18px; margin-bottom: 6px; }
-  .bms-logo { font-size: 18px; margin-bottom: 10px; margin-top: 5px; }
+  .bms-logo { font-size: 18px; margin-bottom: 5px; }
   .bms-disclaimer {
     font-size: 10px;
+    font-style: italic;
+    color: #444;
     margin-top: 5px;
     padding-top: 0;
-    align-self: center;
+    align-self: flex-end;
     position: relative;
     z-index: 10;
-    color: #000;
   }
   .card-3d.prev { transform: translateX(-20%) scale(0.8) rotateY(10deg) translateZ(-50px); opacity: 0; }
   .card-3d.next { transform: translateX(20%) scale(0.8) rotateY(-10deg) translateZ(-50px); opacity: 0; }
