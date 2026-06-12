@@ -169,6 +169,12 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 var(--space-6);
 }
 
+@media (max-width: 480px) {
+  .container {
+    padding: 0 var(--space-4);
+  }
+}
+
 .sr-only {
   position: absolute;
   width: 1px;

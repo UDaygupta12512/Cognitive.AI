@@ -14,7 +14,7 @@
   
   <link rel="stylesheet" href="css/base.css?v=2">
   <link rel="stylesheet" href="css/nav.css?v=2">
-  <link rel="stylesheet" href="css/task1.css?v=2">
+  <link rel="stylesheet" href="css/task1.css?v=7">
   <link rel="stylesheet" href="css/task2.css?v=2">
   <link rel="stylesheet" href="css/task3.css?v=2">
 
@@ -61,21 +61,27 @@
         <h1 class="privileges-title-3d">Exclusive Privileges</h1>
         
         <div class="carousel-3d-wrapper">
+          <button class="carousel-3d-arrow left" id="carousel-3d-prev" aria-label="Previous card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M15 18l-6-6 6-6"/>
+            </svg>
+          </button>
+          
           <div class="carousel-3d" id="carousel-3d">
             
-            
+            <!-- Ixigo Card -->
             <div class="card-3d prev" data-index="0">
               <div class="card-3d-bg ixigo-bg"></div>
               <div class="card-3d-content">
                 <span class="card-3d-text-small">Get</span>
-                <span class="card-3d-text-orange">ACTIVATION VOUCHER</span>
+                <span class="card-3d-text-orange ixigo-title">ACTIVATION VOUCHER</span>
                 <span class="card-3d-text-small">with</span>
                 <span class="card-3d-text-bold">Flat ₹1,200/- off.</span>
                 <div class="card-3d-logo ixigo-logo">ixigo</div>
               </div>
             </div>
 
-            
+            <!-- Reliance Card -->
             <div class="card-3d active" data-index="1">
               <div class="card-3d-bg reliance-bg"></div>
               <div class="card-3d-content">
@@ -93,23 +99,35 @@
               </div>
             </div>
 
-            
+            <!-- BookMyShow Card -->
             <div class="card-3d next" data-index="2">
-              <div class="card-3d-bg"></div>
-              <div class="card-3d-content">
+              <div class="card-3d-bg bms-bg"></div>
+              <div class="card-3d-content bms-content">
                 <span class="card-3d-text-orange bms-title">ENJOY BENEFITS</span>
                 <span class="card-3d-text-small">worth up to</span>
-                <span class="card-3d-text-bold">₹500/- off</span>
-                <span class="card-3d-text-small">on your ticket.</span>
+                <span class="card-3d-text-bold">₹500/- off*</span>
+                <span class="card-3d-text-small">on your tickets.</span>
                 <div class="card-3d-logo bms-logo">
                   book<span class="bms-my">my</span>show
                 </div>
+                <span class="bms-disclaimer">*available on selected cards</span>
+              </div>
+            </div>
+
+            <!-- Apple Card -->
+            <div class="card-3d hidden-right" data-index="3">
+              <div class="card-3d-bg apple-bg"></div>
+              <div class="card-3d-content">
+                <span class="card-3d-text-small">Avail</span>
+                <span class="card-3d-text-orange apple-title">APPLE OFFER</span>
+                <span class="card-3d-text-small">with up to</span>
+                <span class="card-3d-text-bold">₹7,000/- off</span>
               </div>
             </div>
 
           </div>
 
-          
+          <!-- Next Arrow -->
           <button class="carousel-3d-arrow right" id="carousel-3d-next" aria-label="Next card">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
               <path d="M9 18l6-6-6-6"/>

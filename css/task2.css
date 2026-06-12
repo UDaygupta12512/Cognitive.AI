@@ -501,6 +501,10 @@
   .chapters-title {
     font-size: var(--font-size-2xl);
   }
+
+  .thumbnails-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 580px) {
@@ -523,5 +527,15 @@
   .carousel-arrow {
     width: 36px;
     height: 36px;
+  }
+
+  .thumbnails-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .generated-chapters-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3);
   }
 }

@@ -61,10 +61,19 @@ function initCarousel3D() {
     }
   }
 
-  
+  const prevBtn = document.getElementById('carousel-3d-prev');
+
   if (nextBtn) {
     nextBtn.addEventListener('click', () => {
       nextSlide();
+      startAutoPlay(); 
+    });
+  }
+
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+      updateCarousel();
       startAutoPlay(); 
     });
   }
