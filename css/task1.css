@@ -161,6 +161,8 @@
   color: #444;
   margin-top: auto;
   padding-top: 10px;
+  position: relative;
+  z-index: 3;
 }
 
 .apple-title {
@@ -341,7 +343,7 @@
   .ixigo-logo { font-size: 16px; padding: 4px 10px; }
   .reliance-top { font-size: 16px; }
   .bms-title { font-size: 18px; margin-bottom: 6px; }
-  .bms-logo { font-size: 18px; margin-bottom: 24px; }
+  .bms-logo { font-size: 18px; margin-bottom: 10px; }
   .bms-disclaimer {
     font-size: 9px;
   }
