@@ -327,17 +327,9 @@
   .card-3d.next { transform: translateX(45%) scale(0.85) rotateY(-15deg) translateZ(-50px); }
   .carousel-3d-arrow.left { left: calc(50% - 240px); }
   .carousel-3d-arrow.right { left: calc(50% + 200px); }
-}
 
-@media (max-width: 600px) {
-  .privileges-section-3d { padding: 40px 0 80px; min-height: auto; }
-  .privileges-title-3d { font-size: 24px; margin-bottom: 30px; }
-  .carousel-3d-wrapper { height: 260px; }
-  .card-3d {
-    width: 300px; height: 220px;
-    margin-top: -110px; margin-left: -150px;
-  }
-  .card-3d-content { padding: 12px; }
+  /* Reduce text sizes to fit the 220px height card */
+  .card-3d-content { padding: 16px; }
   .card-3d-text-orange { font-size: 20px; margin: 4px 0; }
   .card-3d-text-bold { font-size: 14px; margin: 4px 0 10px; }
   .ixigo-logo { font-size: 16px; padding: 4px 10px; }
@@ -354,6 +346,17 @@
     position: relative;
     z-index: 10;
   }
+}
+
+@media (max-width: 600px) {
+  .privileges-section-3d { padding: 40px 0 80px; min-height: auto; }
+  .privileges-title-3d { font-size: 24px; margin-bottom: 30px; }
+  .carousel-3d-wrapper { height: 260px; }
+  .card-3d {
+    width: 300px; height: 220px;
+    margin-top: -110px; margin-left: -150px;
+  }
+  .card-3d-content { padding: 12px; }
   .card-3d.prev { transform: translateX(-20%) scale(0.8) rotateY(10deg) translateZ(-50px); opacity: 0; }
   .card-3d.next { transform: translateX(20%) scale(0.8) rotateY(-10deg) translateZ(-50px); opacity: 0; }
   
